@@ -9,8 +9,8 @@ function Meal1() {
   const [calories, setCalories] = useState(2000);
 
   function getMealData() {
-    fetch(
-      `https://api.spoonacular.com/mealplanner/generate?apiKey=cb1c464d94f142c08b156c5beddade8b&timeFrame=day&targetCalories=${calories}`
+   fetch(
+      `https://api.spoonacular.com/mealplanner/generate?apiKey=c0082a84d8414e3094c91909ac099d23&timeFrame=day&targetCalories=${calories}`
     )
       .then((response) => response.json())
       .then((data) => {
